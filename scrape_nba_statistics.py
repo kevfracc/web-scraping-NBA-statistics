@@ -1,5 +1,14 @@
 import re
-import urllib
+#import urllib
+import urllib.request
+#https://stackoverflow.com/questions/37042152/python-3-5-1-urllib-has-no-attribute-request
+#  "
+#According to this, you have to use the following:
+#import urllib.request
+#The reason is:
+#With packages, like this, you sometimes need to explicitly import the piece you want. 
+That way, the urllib module doesn't have to load everything up just because you wanted one small part.
+# "
 from time import sleep
 import json
 import pandas as pd
